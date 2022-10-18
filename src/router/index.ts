@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
+import HomePage from '../views/HomePage.vue';
+import NewItem from '@/views/NewItem.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,7 +12,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/home',
     name: 'Home',
     component: HomePage
-  }
+  },
+  {
+    path: '/new',
+    name: 'NewItem',
+    component: NewItem,
+  },
 ]
 
 const router = createRouter({
