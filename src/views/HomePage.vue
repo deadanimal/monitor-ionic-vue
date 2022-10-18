@@ -2,25 +2,32 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Monitor Pipeline Network</ion-title>
+        <ion-title>Monitor</ion-title>
+        <ion-title size="small">Pipeline Project Monitoring</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-item>
+      <!-- <ion-item>
         <ion-checkbox slot="start"></ion-checkbox>
         <ion-label>
           <h1>Create Idea</h1>
           <ion-note>Run Idea By Brandy</ion-note>
         </ion-label>
         <ion-badge color="success" slot="end"> 5 Days </ion-badge>
-      </ion-item>
+      </ion-item> -->
+      <div id="container">
+        <ion-card>
 
-      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+          <ion-title>Email</ion-title>
+        </ion-card>
+      </div>
+
+      <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button @click="() => router.push('/new')">
           <ion-icon :icon="add"></ion-icon>
         </ion-fab-button>
-      </ion-fab>
+      </ion-fab> -->
     </ion-content>
   </ion-page>
 </template>
@@ -60,7 +67,7 @@ export default defineComponent({
 
 <style scoped>
 #container {
-  text-align: center;
+  /* text-align: center; */
 
   position: absolute;
   left: 0;
