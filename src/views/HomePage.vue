@@ -8,26 +8,25 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <!-- <ion-item>
-        <ion-checkbox slot="start"></ion-checkbox>
-        <ion-label>
-          <h1>Create Idea</h1>
-          <ion-note>Run Idea By Brandy</ion-note>
-        </ion-label>
-        <ion-badge color="success" slot="end"> 5 Days </ion-badge>
-      </ion-item> -->
       <div id="container">
         <ion-card>
-
-          <ion-title>Email</ion-title>
+          <ion-card-header>
+            <ion-card-title>Login</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="stacked">Email</ion-label>
+              <ion-input placeholder="@pipeline.com.my"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked">Password</ion-label>
+              <ion-input type="password" placeholder="Enter password given"></ion-input>
+            </ion-item>
+            <ion-button expand="block" @click="() => router.push('/lamanutama')">Login</ion-button>
+          </ion-card-content>
         </ion-card>
       </div>
 
-      <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button @click="() => router.push('/new')">
-          <ion-icon :icon="add"></ion-icon>
-        </ion-fab-button>
-      </ion-fab> -->
     </ion-content>
   </ion-page>
 </template>
@@ -67,13 +66,15 @@ export default defineComponent({
 
 <style scoped>
 #container {
-  /* text-align: center; */
+  text-align: center;
 
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 #container strong {

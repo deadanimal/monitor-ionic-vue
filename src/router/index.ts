@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router';
 import HomePage from '../views/HomePage.vue';
 import NewItem from '@/views/NewItem.vue';
 import TestApi from '@/views/TestApi.vue';
+import LamanUtama from "@/views/LamanUtama.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,6 +24,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/testapi',
     name: 'TestApi',
     component: TestApi,
+  },
+  {
+    path: '/lamanutama',
+    name: 'LamanUtama',
+    component: LamanUtama,
   },
 ]
 
